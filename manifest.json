@@ -1,0 +1,40 @@
+{
+  "name": "Copy Tabs as Markdown",
+  "version": "1.0.2",
+  "manifest_version": 2,
+  "description": "Copy URL and Title as Markdown",
+  "permissions": [
+  "tabs",
+  "storage"
+  ],
+  "icons": {
+    "16": "icon-16.png",
+    "48": "icon-48.png",
+    "128": "icon-128.png"
+  },
+  "browser_action": {
+    "default_icon": "icon-128.png",
+    "default_title": "Copy URL and Title",
+    "default_popup": "popup.html",
+    "browser_style": true
+  },
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": false
+  },
+  "commands": {
+    "copy-current-tab": {
+      "suggested_key": {
+        "default": "Alt+Shift+C"
+      },
+      "description": "Copy Current Tab"
+    },
+    "copy-all-tabs": {
+      "suggested_key": {
+        "default": "Alt+Shift+X"
+      },
+      "description": "Copy All Tabs"
+    }
+  },
+  "options_page": "options.html"
+}
