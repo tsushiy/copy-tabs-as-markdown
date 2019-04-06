@@ -1,6 +1,6 @@
 {
   "name": "Copy Tabs as Markdown",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "manifest_version": 2,
   "description": "Copy URL and Title as Markdown",
   "permissions": [
@@ -8,12 +8,12 @@
   "storage"
   ],
   "icons": {
-    "16": "icon-16.png",
-    "48": "icon-48.png",
-    "128": "icon-128.png"
+    "16": "icons/icon-16.png",
+    "48": "icons/icon-48.png",
+    "128": "icons/icon-128.png"
   },
   "browser_action": {
-    "default_icon": "icon-128.png",
+    "default_icon": "icons/icon-128.png",
     "default_title": "Copy URL and Title",
     "default_popup": "popup.html",
     "browser_style": true
