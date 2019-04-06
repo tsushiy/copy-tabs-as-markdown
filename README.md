@@ -1,8 +1,14 @@
-Install: [Copy Tabs as Markdown - Chrome Web Store](https://chrome.google.com/webstore/detail/copy-tabs-as-markdown/bijpamokpnoogjbboljnepcbmookobnm)
+# Copy Tabs as Markdown
 
-Copy current tab or all tabs URL and Title as Markdown easily.  
+Copy current tab or all tabs URL and Title as Markdown easily. 
 
-Shortcuts:  
+## Installation
+
+[Copy Tabs as Markdown - Chrome Web Store](https://chrome.google.com/webstore/detail/copy-tabs-as-markdown/bijpamokpnoogjbboljnepcbmookobnm)
+
+---
+
+Shortcut keys:  
 Copy current tab: Alt+Shift+C  
 Copy all tabs: Alt+Shift+X  
 You can customize keyboards shortcuts.
@@ -16,3 +22,7 @@ Multi-byte characters are not encoded in order to shorten URL.
 <img src="img\c0b3aa91f0c.png" alt="image.png" width=80%>
 
 <img src="img\37d0192a1fd8.png" alt="image.png" width=50%>
+
+## LICENSE
+
+MIT
