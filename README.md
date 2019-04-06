@@ -22,7 +22,3 @@ Multi-byte characters are not encoded in order to shorten URL.
 <img src="img\c0b3aa91f0c.png" alt="image.png" width=80%>
 
 <img src="img\37d0192a1fd8.png" alt="image.png" width=50%>
-
-## LICENSE
-
-MIT
