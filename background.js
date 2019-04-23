@@ -14,16 +14,16 @@ function executeCopy(textbox, text) {
 function excapeUrl(url) {
   url = decodeURI(url);
   return url
-  .replace(/\(/g, escape)
-  .replace(/\)/g, escape)
-  .replace(/\[/g, escape)
-  .replace(/\]/g, escape)
-  .replace(/\ /g, escape);
+    .replace(/\(/g, escape)
+    .replace(/\)/g, escape)
+    .replace(/\[/g, escape)
+    .replace(/\]/g, escape)
+    .replace(/\ /g, escape);
 }
 
 function copyInFormat(command) {
-  if (command == 'copy-current-tab'){
-    chrome.tabs.query({active: true, currentWindow: true}, function(tabs) {
+  if (command == 'copy-current-tab') {
+    chrome.tabs.query({ active: true, currentWindow: true }, function (tabs) {
       chrome.storage.sync.get({
         currentTabFormat: '[${title}](${url})',
       }, function (options) {
@@ -34,8 +34,8 @@ function copyInFormat(command) {
         executeCopy(textbox, text);
       });
     });
-  } else if (command == 'copy-all-tabs'){
-    chrome.tabs.query({currentWindow: true}, function(tabs) {
+  } else if (command == 'copy-all-tabs') {
+    chrome.tabs.query({ currentWindow: true }, function (tabs) {
       chrome.storage.sync.get({
         allTabsFormat: '* [${title}](${url})',
       }, function (options) {
@@ -52,6 +52,6 @@ function copyInFormat(command) {
   }
 }
 
-chrome.commands.onCommand.addListener(function(command) {
+chrome.commands.onCommand.addListener(function (command) {
   copyInFormat(command);
 });

@@ -14,15 +14,15 @@ function executeCopy(textbox, text) {
 function excapeUrl(url) {
   url = decodeURI(url);
   return url
-  .replace(/\(/g, escape)
-  .replace(/\)/g, escape)
-  .replace(/\[/g, escape)
-  .replace(/\]/g, escape)
-  .replace(/\ /g, escape);
+    .replace(/\(/g, escape)
+    .replace(/\)/g, escape)
+    .replace(/\[/g, escape)
+    .replace(/\]/g, escape)
+    .replace(/\ /g, escape);
 }
 
-window.onload = function() {
-  chrome.tabs.query({active: true, currentWindow: true}, function(tabs) {
+window.onload = function () {
+  chrome.tabs.query({ active: true, currentWindow: true }, function (tabs) {
     chrome.storage.sync.get({
       currentTabFormat: '[${title}](${url})',
     }, function (options) {
